@@ -32,6 +32,7 @@
             this.btn_close = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
+            this.lb_txt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt_ok
@@ -42,6 +43,7 @@
             this.bt_ok.TabIndex = 0;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
             // btn_close
             // 
@@ -51,6 +53,7 @@
             this.btn_close.TabIndex = 1;
             this.btn_close.Text = "close";
             this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // label1
             // 
@@ -68,11 +71,21 @@
             this.txt_name.Size = new System.Drawing.Size(155, 20);
             this.txt_name.TabIndex = 3;
             // 
+            // lb_txt
+            // 
+            this.lb_txt.AutoSize = true;
+            this.lb_txt.Location = new System.Drawing.Point(268, 157);
+            this.lb_txt.Name = "lb_txt";
+            this.lb_txt.Size = new System.Drawing.Size(19, 13);
+            this.lb_txt.TabIndex = 4;
+            this.lb_txt.Text = "aa";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lb_txt);
             this.Controls.Add(this.txt_name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_close);
@@ -91,6 +104,7 @@
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.Label lb_txt;
     }
 }
 

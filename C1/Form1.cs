@@ -21,5 +21,34 @@ namespace C1
         {
 
         }
+
+        private void bt_ok_Click(object sender, EventArgs e)
+        {
+            
+            
+
+            try
+            {
+
+                Byte txt = Convert.ToByte(txt_name.Text);
+                lb_txt.Text = txt.ToString();
+
+            }
+            catch (OverflowException x)
+            {
+
+                MessageBox.Show("Error en el tamaño del numero:  " + x);
+            }
+            catch (FormatException xx) //cuando escribo con letras en ves de numeros 
+            {
+
+                MessageBox.Show("Error en el formato:  " + xx);
+            }
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
