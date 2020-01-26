@@ -34,7 +34,7 @@ namespace C1
                 lb_txt.Text = txt.ToString();
 
             }
-            catch (OverflowException x)
+            catch (OverflowException x)a
             {
 
                 MessageBox.Show("Error en el tamaño del numero:  " + x);
